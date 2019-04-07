@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row short-link-row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <h5 class="card-header info-color white-text text-center py-4">
+                <strong>Your link is ready</strong>
+            </h5>
+            <div class="card-body px-lg-5">
+                <form class="text-center" action="" method="POST">
+                    {% csrf_token %}
+                    <div class="md-form mt-3">
+                        <div class="form-group has-error">
+                            <input type="text" class="form-control readonly-input" value="{{ shortcut }}" readonly="readonly">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

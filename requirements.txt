@@ -1,0 +1,6 @@
+Django==2.1.7
+psycopg2-binary
+ipdb
+libsass==0.17.0
+django-compressor==2.2
+django-sass-processor==0.7.2

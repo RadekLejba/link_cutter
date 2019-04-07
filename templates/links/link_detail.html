@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <table class="table">
+                <h1>Link details:</h1>
+                <tbody>
+                    <tr>
+                        <th scope="row">url</th>
+                        <td>{{ link.url }}</td>
+                    </tr>
+                        <th scope="row">visits</th>
+                        <td>{{ link.visits }}</td>
+                    <tr>
+                        <th scope="row">shortcut</th>
+                        <td>{{ link.shortcut }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">sender_ip</th>
+                        <td>{{ link.sender_ip }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">sender_system_info</th>
+                        <td>{{ link.sender_system_info }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">sender_referer</th>
+                        <td>{{ link.sender_referer }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
